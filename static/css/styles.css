@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+*{
+  font-family: Montserrat;
+}
 
+.cards {
+    background-color: #1e1f21;
+    padding:5% 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 37rem));
+    color:#fff;
+    /* grid-gap:2rem; */
+  }
+  article {
+    position: relative;
+  }
+  
+  .article-img {
+    height: 30vw;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
 #main{
     background-image:url(../img/img1.jpg);
     background-repeat: no-repeat;
@@ -55,3 +77,153 @@
         padding:.5vw 2vw .5vw 2vw;
     }
 }
+
+
+/* myworks */
+#works ul{
+  display: flex;flex-wrap: wrap;
+  justify-content: space-between;
+}
+#works li{
+
+  list-style-type: none;
+}
+#myworks{
+  background-color: #1e1f21;
+  color:#fff;
+}
+#myworks .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    justify-content:center;
+  
+    
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  #myworks .column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+  }
+  
+  #myworks .column img {
+    margin-top: 2vw;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    #myworks  .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    #myworks  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  /* like */
+  #like{
+    background-color: #1e1f21;
+    color:#fff;padding-top:5%;
+   
+  }
+
+
+
+  
+  .contact-box h3 {
+   
+    padding: 0;
+    color: #fff;
+    
+  }
+  
+  .contact-box .user-box {
+    position: relative;
+    margin-top:2%;
+  }
+  
+  .contact-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.5vw;
+    color: #fff;
+    margin-bottom: 2vw;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .contact-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .contact-box .user-box input:focus ~ label,
+  .contact-box .user-box input:valid ~ label {
+    top: -2vw;
+    left: 0;
+    color: #ffffff;
+    font-size: 1vw;
+  }
+  
+#submit{
+  background-color:#fff;color:#000;
+}
+
+/* More */
+#more{
+  background-color:#1e1f21;
+  color: #fff;
+  padding-top:5%;
+  padding-bottom: 5%;
+}
+#insta a {
+  text-decoration: underline;
+  color: #fff;
+  
+}
+
+
+
+/* footer */
+footer{
+  background-color: #0f0f0f;
+  padding:2% 2% 2% 2%;
+  color:#fff;
+  font-size: 1.3vw;
+}
+#social{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:start;
+  list-style-type:none;
+
+}
+#social p i{
+  font-size:2vw;
+  width:2em;
+  color: white;
+  font-weight: bold;
+ 
+  text-align: center;
+}
+
