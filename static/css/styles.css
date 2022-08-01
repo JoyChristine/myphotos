@@ -30,6 +30,13 @@
     background-position: center center;
    
 }
+#navlist{
+  padding: 5% 5% 0% 5%;
+  color: black !important;
+}
+#navlist li a {
+  color: black !important;
+}
 #header{
     margin:10rem;
     font-family: Montserrat;
