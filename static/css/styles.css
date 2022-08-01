@@ -15,14 +15,15 @@
 }
 #navlist{
   padding: 5% 5% 0% 5%;
-  color: black !important;
+ 
 }
 #navlist li a {
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
 }
 #header{
     margin:10rem;
     font-family: Montserrat;
+    color: rgb(255, 255, 255) !important;
     
 }
 #header .center{
@@ -39,6 +40,7 @@
 #portfolio{
     border:1px solid #fff;
     background-color: none;
+    color: #fff;
     background:none;
     padding:.5vw 2vw .5vw 2vw;
 }
@@ -90,11 +92,13 @@ article {
 
 /* myworks */
 #works ul{
-  display: flex;flex-wrap: wrap;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+ 
 }
 #works li{
-
+  margin-left: 2%;
   list-style-type: none;
 }
 #myworks{
@@ -106,7 +110,7 @@ article {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:center;
   
     
   }
