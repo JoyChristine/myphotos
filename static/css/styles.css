@@ -3,24 +3,7 @@
   font-family: Montserrat;
 }
 
-.cards {
-    background-color: #1e1f21;
-    padding:5% 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 37rem));
-    color:#fff;
-    /* grid-gap:2rem; */
-  }
-  article {
-    position: relative;
-  }
-  
-  .article-img {
-    height: 30vw;
-    width: 100%;
-    object-fit: cover;
-  }
-  
+
   
 #main{
     background-image:url(../img/img1.jpg);
@@ -84,6 +67,25 @@
         padding:.5vw 2vw .5vw 2vw;
     }
 }
+/* about */
+#about {
+  background-color: #1e1f21;
+  padding:5% 0 5% 0;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 37rem)); */
+  color:#fff;
+  /* grid-gap:2rem; */
+}
+article {
+  /* position: relative; */
+  padding: 3% 3% 3% 7%;
+}
+
+.article-img {
+  height: 25vw;
+  width: 100%;
+  object-fit: cover;
+}
 
 
 /* myworks */
@@ -104,7 +106,7 @@
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-around;
   
     
   }
