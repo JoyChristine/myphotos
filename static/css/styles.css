@@ -240,3 +240,18 @@ footer{
   text-align: center;
 }
 
+.current a {
+  color:red;
+}
+.tabs-menu {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.tab-content {
+  display:none;
+}
+
+#tab-1 {
+  display:block;
+}
