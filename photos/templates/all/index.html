@@ -1,4 +1,4 @@
-{%load static%}
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +14,19 @@
     <!-- css link -->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <!-- js link -->
-    <script src="{% static 'js/script.js' %}"></script>   
-
+      
    
-   
+    <!-- JQUERY -->
+    <link href="{% static 'js/jquery-ui-1.13.2/jquery-ui.min.css' %}" rel="stylesheet">
+    <link href="{% static 'js/jquery-ui-1.13.2/jquery-ui.structure.min.css' %}" rel="stylesheet">
+    <link href="{% static 'js/jquery-ui-1.13.2/jquery-ui.theme.min.css' %}" rel="stylesheet">
+    
+    
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-1.13.2/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <!-- ENDJQUERY -->
+    
     
     <title>Japheth</title>
 </head>
@@ -58,6 +67,14 @@
           <h1>Japheth Isaboke</h1>
           <p>Shooting with me is an easy way to love yourself</p>
           <button id="portfolio" href="#portfolio">Portfolio</button>
+          <button onClick="alert('You clicked the button using Javascript.');">
+            Click Me - I run Javascript
+     </button>
+          <button id="about-btn"> Click Me - I'm Javascript on Speed</button>
+
+<p>This is a example</p>
+
+<p>This is another example</p>
         </div>
         
       </header>
@@ -184,7 +201,24 @@
         </div>
       </div>
     </div>
-    
+    <div id="tabs-container">
+      <ul class="tabs-menu">
+        <li class="current"><a href="#tab-1">Tab 1</a></li>
+        <li><a href="#tab-2">Tab 2</a></li>
+        <li><a href="#tab-3">Tab 3</a></li>
+        <li><a href="#tab-4">Tab 4</a></li>
+      </ul>
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+        <img src="https://imgs.search.brave.com/t-xNkIpFXPRWrWWt_BGkEFOTbGj70Hn1hzl--lBtyyc/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5I/TTY2NGd0ZGJIVmtP/WHZXRzRYM0xBSGFF/NyZwaWQ9QXBp">
+        </div>
+        <div id="tab-2" class="tab-content">
+        <img src="https://imgs.search.brave.com/zcpgp4uZab4jEye2ooeByD_E3Kh9g_TykQAV61kJUKA/rs:fit:475:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Y/VE9uZmxWY2JrUDFp/SkZ2OEUzM1F3SGFI/WiZwaWQ9QXBp">
+        </div>
+        <div id="tab-3" class="tab-content">tab 3 content</div>
+        <div id="tab-4" class="tab-content">tab 4 content</div>
+      </div>
+    </div>
     <footer id="footer">
       <div class="container">
         <div class="row">
@@ -221,6 +255,7 @@
 
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    
     </body>
     </html>
