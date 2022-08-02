@@ -21,7 +21,7 @@
   color: rgb(255, 255, 255) !important;
 }
 #header{
-    margin:10rem;
+    padding:8%;
     font-family: Montserrat;
     color: rgb(255, 255, 255) !important;
     
@@ -44,23 +44,23 @@
     background:none;
     padding:.5vw 2vw .5vw 2vw;
 }
-@media (min-width: 450px) and (max-width: 768px) {
+@media (min-width: 50px) and (max-width: 768px) {
    
     #header{
-        margin:10rem;
+        padding-top:50%;
         font-family: Montserrat;
         
     }
-    #header .center{
+    /* #header .center{
         text-align: center;
-    }
+    } */
     #header h1{
         font-family: Montserrat;
         font-weight: 600;
-        font-size:6vw;
+        font-size:9vw;
     }
     #header p{
-        font-size:1.9vw;
+        font-size:3.9vw;
     }
     #portfolio{
         border:1px solid #fff;
