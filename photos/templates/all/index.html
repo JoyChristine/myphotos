@@ -67,14 +67,7 @@
           <h1>Japheth Isaboke</h1>
           <p>Shooting with me is an easy way to love yourself</p>
           <button id="portfolio" href="#portfolio">Portfolio</button>
-          <button onClick="alert('You clicked the button using Javascript.');">
-            Click Me - I run Javascript
-     </button>
-          <button id="about-btn"> Click Me - I'm Javascript on Speed</button>
-
-<p>This is a example</p>
-
-<p>This is another example</p>
+  
         </div>
         
       </header>
@@ -105,18 +98,46 @@
         
         <div class="row"> 
           <h3>My works</h3>
-          <div id="works">
+          <div id="tabs-container">
+            <ul class="tabs-menu" id="tabs-menu">
+              <li class="current"><a href="#tab-1">Studio Photography</a></li>
+              <li><a href="#tab-2">Love story</a></li>
+              <li><a href="#tab-3">Commercial shooting</a></li>
+              <li><a href="#tab-4">Nature</a></li>
+            </ul>
+            <div class="tab">
+              <div id="tab-1" class="tab-content" id="tab-content">
+                
+                <div class="column">
+                  {%for image in images%}
+                  <img src="{{image.image.url}}" class="img-fluid" alt="">
+                  {%endfor%}
+                </div>
+                
+              </div>
+              <div id="tab-2" class="tab-content">
+                <div class="column">
+                  {%for image in images%}
+                  <img src="{{image.image.url}}" class="img-fluid" alt="">
+                  {%endfor%}
+                </div>
+              </div>
+              <div id="tab-3" class="tab-content">tab 3 content</div>
+              <div id="tab-4" class="tab-content">tab 4 content</div>
+            </div>
+          </div>
+          <!-- <div id="works">
             <ul>
-              <li>Studio Photography</li>
-              <li>Love story</li>
-              <li>Commercial shooting</li>
+              <li></li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
           {%for image in images%}
           <div class="column">
             <img src="{{image.image.url}}" class="img-fluid" alt="">
           </div>
-          {%endfor%}
+          {%endfor%} -->
           <!-- <div class="column">
           
           
@@ -201,24 +222,7 @@
         </div>
       </div>
     </div>
-    <div id="tabs-container">
-      <ul class="tabs-menu">
-        <li class="current"><a href="#tab-1">Tab 1</a></li>
-        <li><a href="#tab-2">Tab 2</a></li>
-        <li><a href="#tab-3">Tab 3</a></li>
-        <li><a href="#tab-4">Tab 4</a></li>
-      </ul>
-      <div class="tab">
-        <div id="tab-1" class="tab-content">
-        <img src="https://imgs.search.brave.com/t-xNkIpFXPRWrWWt_BGkEFOTbGj70Hn1hzl--lBtyyc/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5I/TTY2NGd0ZGJIVmtP/WHZXRzRYM0xBSGFF/NyZwaWQ9QXBp">
-        </div>
-        <div id="tab-2" class="tab-content">
-        <img src="https://imgs.search.brave.com/zcpgp4uZab4jEye2ooeByD_E3Kh9g_TykQAV61kJUKA/rs:fit:475:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Y/VE9uZmxWY2JrUDFp/SkZ2OEUzM1F3SGFI/WiZwaWQ9QXBp">
-        </div>
-        <div id="tab-3" class="tab-content">tab 3 content</div>
-        <div id="tab-4" class="tab-content">tab 4 content</div>
-      </div>
-    </div>
+    
     <footer id="footer">
       <div class="container">
         <div class="row">
