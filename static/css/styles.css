@@ -240,7 +240,7 @@ footer{
   text-align: center;
 }
 
-.current a {
+#current a {
   text-decoration: underline;
 }
 .tabs-menu {
