@@ -241,7 +241,7 @@ footer{
 }
 
 .current a {
-  color:red;
+  text-decoration: underline;
 }
 .tabs-menu {
   display:flex;
@@ -251,7 +251,17 @@ footer{
 .tab-content {
   display:none;
 }
-
+#tabs-menu li {
+  list-style:none;
+  text-decoration:none;
+}
+#tabs-menu li a {
+   text-decoration:none;
+   color:rgb(255, 255, 255);
+}
+#tabs-menu li a:hover{
+  text-decoration:underline;
+}
 #tab-1 {
   display:block;
 }
