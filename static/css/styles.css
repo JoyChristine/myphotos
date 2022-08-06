@@ -137,7 +137,7 @@ article {
       max-width: 50%;
     }
   }
-  
+  /* works-img */
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     #myworks  .column {
@@ -151,6 +151,11 @@ article {
     background-color: #1e1f21;
     color:#fff;padding-top:5%;
    
+  }
+  @media screen and (max-width:768px){
+    #works-img{
+      display:none;
+    }
   }
 
 
@@ -214,8 +219,18 @@ article {
   color: #fff;
   
 }
-
-
+#more-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#more-row .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
 
 /* footer */
 footer{
@@ -265,3 +280,4 @@ footer{
 #tab-1 {
   display:block;
 }
+
